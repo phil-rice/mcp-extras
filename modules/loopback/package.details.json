@@ -1,6 +1,6 @@
 {
   "template": "typescript",
-  "name": "@mcpextras/loopback",
+  "name": "@mcp-extras/loopback",
   "description": "A loopback transport that allows in memory communication between model context protocol clients and servers",
   "packageJson": {
     "dependencies": {

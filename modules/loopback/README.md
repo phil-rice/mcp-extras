@@ -5,7 +5,7 @@ enabling MCP client-server interactions within the same execution context.
 
 # External Links
 [Github](https://github.com/phil-rice/mcp-extras)
-[npmjs](https://www.npmjs.com/package/@mcpextras/loopback)
+[npmjs](https://www.npmjs.com/package/@mcp-extras/loopback)
 [Discussion in modelcontextprotocol](https://github.com/orgs/modelcontextprotocol/discussions/313)
 
 ---
@@ -35,7 +35,7 @@ yarn add @mcpextras/loopback
 ```typescript
 import {Client} from "@modelcontextprotocol/sdk/client/index.js";
 import {Server} from "@modelcontextprotocol/sdk/server/index.js";
-import {LoopbackTransport} from "@mcpextras/loopback";
+import {LoopbackTransport} from "@mcp-extras/loopback";
 
 // Create server and client
 const server = new McpServer({ name: "example-server", version: "1.0.0" });
