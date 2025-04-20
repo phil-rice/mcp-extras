@@ -68,3 +68,6 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn laoban publish -t 1
+
+      - name: Verify publish status
+        run: yarn status  # Causes the workflow to fail if the publish status is not 0
