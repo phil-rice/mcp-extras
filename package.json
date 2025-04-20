@@ -13,10 +13,23 @@
   ],
   "resolutions": {},
   "devDependencies": {
-    "nyc": "^17.1.0"
+    "nyc": "^17.1.0",
+    "laoban": "^1.4.58",
+    "madge": "^8.0.0",
+    "open-cli": "^8.0.0"
   },
   "scripts": {
     "cycles": "madge --circular --extensions ts,tsx --json --exclude node_modules .",
-    "coverage:report": "nyc report --reporter=html --report-dir=./coverage --temp-dir=coverage"
+    "coverage": "yarn coverage:run && yarn coverage:copy && yarn coverage:report",
+    "coverage:run": "laoban coverage",
+    "coverage:copy": "laoban coverage-copy",
+    "coverage:report": "nyc report --reporter=html --report-dir=./coverage --temp-dir=coverage",
+    "coverage:open": "open-cli coverage/index.html",
+    "lint": "laoban lint -s",
+    "test": "laoban test",
+    "test:count": "laoban testcount",
+    "status": "laoban status",
+    "profile": "laoban profile",
+    "version:bump": "laoban update --minor"
   }
 }

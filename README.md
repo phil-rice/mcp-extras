@@ -20,11 +20,13 @@ yarn
 
 # Testing
 
-You can individually run the tests for each package by running the following command in the package directory:
+You can run the tests by (in the root directory, or in a single package):
 
 ```bash
 yarn test
 ```
 
-Alternatively read the [CONTRIBUTING](CONTRIBUTING.md) file for more information on how to run the tests in all the packages in one command.
+# Contributing
+We welcome contributions to the @mcp-extras! [This document](CONTRIBUTING.md) outlines the process for contributing to the project.
+
 

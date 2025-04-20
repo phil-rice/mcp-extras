@@ -9,7 +9,8 @@
   ],
   "properties": {
     "license": "MIT",
-    "repository": "https://github.com/phil-rice/mcp-extras"
+    "repository": "https://github.com/phil-rice/mcp-extras",
+    "mcp": "^1.10.1"
   },
   "templates": {
     "typescript": "templates/typescript"

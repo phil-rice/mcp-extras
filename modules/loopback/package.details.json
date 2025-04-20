@@ -4,7 +4,7 @@
   "description": "A loopback transport that allows in memory communication between model context protocol clients and servers",
   "packageJson": {
     "dependencies": {
-      "@modelcontextprotocol/sdk": "^1.10.1"
+      "@modelcontextprotocol/sdk": "${properties.mcp}"
     },
     "devDependencies": {
       "abort-controller": "^3.0.0"
