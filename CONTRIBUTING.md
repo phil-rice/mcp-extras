@@ -3,7 +3,6 @@
 
 We welcome contributions to the @mcpextras! This document outlines the process for contributing to the project.
 
-
 ## Getting Started
 
 1. Fork the repository

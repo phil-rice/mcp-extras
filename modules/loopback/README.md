@@ -4,9 +4,9 @@ A simple, efficient **in-memory Loopback Transport** implementation for the **Mo
 enabling MCP client-server interactions within the same execution context.
 
 # External Links
-[Github](https://github.com/phil-rice/mcp-extras)
-[npmjs](https://www.npmjs.com/package/@mcp-extras/loopback)
-[Discussion in modelcontextprotocol](https://github.com/orgs/modelcontextprotocol/discussions/313)
+* [Github](https://github.com/phil-rice/mcp-extras)
+* [npmjs](https://www.npmjs.com/package/@mcp-extras/loopback)
+* [Discussion in modelcontextprotocol](https://github.com/orgs/modelcontextprotocol/discussions/313)
 
 ---
 
