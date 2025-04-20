@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Or your project's preferred Node version
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install Laoban
+        run: npm i -g laoban
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run tests
+        run: laoban tests
+
+#  publish:
+#    name: Publish to NPM
+#    runs-on: ubuntu-latest
+#    needs: test
+#    if: github.ref == 'refs/heads/main'
+#
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v4
+#
+#      - name: Setup Node.js
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version: '20'
+#          registry-url: 'https://registry.npmjs.org'
+#
+#      - name: Install Laoban
+#        run: npm i -g laoban
+#
+#      - name: Install dependencies
+#        run: yarn
+#
+#      - name: Publish package
+#        env:
+#          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+#        run: laoban publish -t 1
