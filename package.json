@@ -1,29 +1,22 @@
 {
-  "name": "@mcp-extras/loopback",
-  "description": "A transport that allows in memory communication between model context protocol clients and servers",
-  "version": "0.0.1",
-  "main": "dist/index",
-  "types": "dist/index",
-
-  "dependencies": {},
-  "devDependencies": {
-    "typescript": "^5.8.3",
-    "@types/node": "^22.14.1",
-    "@types/jest": "^29.5.14",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/user-event": "^14.6.1",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.3.2"
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git@ssh.git.eon-cds.de:22222/repos/me8eonmvp1/me8eon-sap-connect-poc.git"
   },
-  "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/src/"
+  "alias": {
+    "@stencil/react-output-target/runtime": "./node_modules/@stencil/react-output-target/dist/react.js"
+  },
+  "workspaces": [
+    "modules/**"
   ],
-  "license": "MIT",
-  "repository": " git@github.com:phil-rice/mcp-extras.git",
+  "resolutions": {},
+  "devDependencies": {
+    "nyc": "^17.1.0"
+  },
   "scripts": {
-    "test": "jest --config jest.config.json",
-    "test:watch": "npm run test -- --watch"
+    "cycles": "madge --circular --extensions ts,tsx --json --exclude node_modules .",
+    "coverage:report": "nyc report --reporter=html --report-dir=./coverage --temp-dir=coverage"
   }
 }

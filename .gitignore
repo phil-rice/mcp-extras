@@ -1,3 +1,10 @@
 node_modules/
+coverage/
+testcount/
 dist/
 .idea/
+.session/
+.log
+.profile
+.status
+# note .cache is kept to help those people with awkward proxy settings.

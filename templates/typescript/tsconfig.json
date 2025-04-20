@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",                // Use the new JSX transform
+    "module": "ESNext",                // Use native ES modules
+    "target": "ES2020",                // Target modern JavaScript
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,                  // Helpful for debugging
+    "strict": true,                     // Enable strict type-checking
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*", "index.ts"],
+  "exclude": ["dist", "node_modules"]
+}

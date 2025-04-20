@@ -1,0 +1,20 @@
+{
+  "template": "typescript",
+  "name": "@mcpextras/loopback",
+  "description": "A loopback transport that allows in memory communication between model context protocol clients and servers",
+  "packageJson": {
+    "dependencies": {
+      "@modelcontextprotocol/sdk": "^1.10.1"
+    },
+    "devDependencies": {
+      "abort-controller": "^3.0.0"
+    }
+  },
+  "links": [
+  ],
+  "guards": {
+    "compile": true,
+    "publish": true,
+    "test": true
+  }
+}
